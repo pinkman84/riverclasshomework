@@ -35,11 +35,17 @@ class TestBank < MiniTest::Test
     assert_equal([], @bear1.tummy)
   end
 
-  def test_caught_fish
-    assert_equal('Nemo', @river.caught_fish)
+  # def test_caught_fish
+  #   assert_equal('Nemo', @river.caught_fish)
+  # end
+
+  # def test_gone_fishin
+  #   assert_equal(['Nemo'], @bear1.gone_fishin)
+  # end
+
+  def test_eat_fish_from_river
+    assert_equal(["Nemo"], @river.eat_fish_from_river(@bear1))
+    
   end
 
-  def test_gone_fishin
-    assert_equal(['Nemo'], @bear1.gone_fishin)
-  end
 end

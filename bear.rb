@@ -15,10 +15,10 @@ class Bear
     return "Rooooooar"
   end
 
-  def gone_fishin
-   @tummy << @river
-   return @tummy
-  end
+  # def gone_fishin
+  #  @tummy << @river
+  #  return @tummy
+  # end
 
 
 
